@@ -48,11 +48,13 @@ div img {
 
 .botao-amarelo:hover {
     background-color: #c44f00;
+
 }
 
 .container {
     height: 500px;
     text-align: center;
+
 }
 
 .icone {
@@ -77,6 +79,7 @@ div img {
 
 #container-para-comprar {
     background-color: #e7eb90;
+
 }
 
 #container-para-comprar>p {
