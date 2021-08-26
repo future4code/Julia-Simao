@@ -14,6 +14,7 @@ h2 {
     padding: 10px 5px 10px 5px;
     color: white;
     text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
 }
 
 input {
@@ -42,10 +43,12 @@ div>p:first-child {
     border-radius: 5px;
     font-size: 20px;
     color: white;
+    text-decoration: none;
 }
 
 .botao-amarelo:hover {
     background-color: #c44f00;
+
 
 }
 
@@ -71,6 +74,8 @@ div>p:first-child {
     background-color: #2274a5;
     color: white;
     padding-top: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+
 }
 
 
@@ -80,6 +85,8 @@ div>p:first-child {
 
 #container-para-comprar {
     background-color: #e7eb90;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, 'Roboto', Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+
 
 }
 
@@ -87,6 +94,7 @@ div>p:first-child {
     color: #c44f00;
     padding: 100px 0;
     font-size: 60px;
+    display: block;
 }
 
 
@@ -103,6 +111,8 @@ div:last-child {
 
 table {
     width: 60%;
+    align-content: center;
+    margin: auto;
 }
 
 td button {
@@ -110,7 +120,9 @@ td button {
     width: 150px;
     height: 30px;
     border-radius: 5px;
+    border: 1px;
     color: black;
+    margin: auto;
 }
 
 td button:hover {
@@ -127,6 +139,7 @@ td button:active{
     margin-top: 20px;
     border-bottom: 20px;
     height: 100px;
+    text-align: center;
 }
 
 .borda-input {
@@ -136,7 +149,7 @@ td button:active{
     border-bottom: 5;
 }
 
-#back-button {
+.back-button {
     background-color: white;
     width: 100px;
     height: 20px;
@@ -144,6 +157,9 @@ td button:active{
     border-radius: 5px;
     font-size: 10px;
     color: black;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 47vw;
 }
 
 #back-button:hover {
