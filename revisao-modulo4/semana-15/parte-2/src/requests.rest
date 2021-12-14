@@ -1,0 +1,15 @@
+GET http://localhost:3003/character
+
+###
+
+PUT http://localhost:3003/character
+Content-Type: application/json
+
+{
+    "name":"Juggernout",
+    "gender":"MALE",
+    "description":"Irmão do professor X"
+}
+
+###
+GET http://localhost:3003/character/female/search/?name=t
