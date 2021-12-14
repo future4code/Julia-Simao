@@ -1,0 +1,255 @@
+
+
+/* #menu-topo {
+    background-color: white;
+    list-style-type:none;
+    margin-top: 50px;
+} */
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+h1 *{
+    margin: 0px;
+    padding: 0px;
+}
+
+.links-p {
+    float: right;
+    margin-right: 120px;
+    display: inline;
+    word-spacing: 30px;
+    margin-top: 40px;
+}
+
+.links-nav {
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.links-nav:hover {
+    font-size: 23px;
+}
+
+.img-nav {
+    width: 60px;
+    height: 60px;
+    padding: 0px;
+    margin-left: 105px;
+    margin-top: 23px;
+    display: inline-block;
+}
+
+
+.button-style {
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid blue;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-style:hover {
+    background-color: blue;
+    color: white;
+}
+
+footer {
+    background-color: blue;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.icon-center{
+    margin-left: 560px;
+}
+.icones-footer{
+    width: 25px;
+    height: 25px;
+    display: inline;
+    padding: 18px;
+}
+
+.div-main {
+    margin-top: 50px;
+    margin-left: 105px;
+    display: inline-block;
+}
+
+.texto-main {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.bloco-texto {
+    text-align: justify;
+    float: right;
+    margin-right: 150px;
+    margin-top: 160px;
+    display: block;
+    line-break: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-justify: distribute;
+    line-height: 22px;
+}
+
+.div-corpo {
+    width: 1125px;
+    height: 500px;
+    background: rgb(248, 248, 248);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    position: relative;
+}
+
+.titulo-corpo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    display: block;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 5px;
+    padding: 20px;
+    font-size: 40px;
+    color: blue;
+}
+
+.subtitulo-corpo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    display: block;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 5px;
+    padding: 20px;
+    font-size: 30px;
+    color: blue;
+}
+
+.texto-corpo-esquerda {
+    display: block;
+    text-align: left;
+    margin-left: 35px;
+    margin-top: -60px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.div-op1 {
+    margin-top: 30px;
+    width: 120px;
+    display: inline-block;
+    background-color :rgb(248, 248, 248);
+    text-align: center;
+    min-width: 540px;
+    margin-left: 105px;
+    border-radius: 20px;
+}
+
+.div-op2 {
+    width: 160px;
+    display: inline-block;
+    background-color: rgb(248, 248, 248);
+    min-width: 600px;
+    border-radius: 20px;
+    align-content: center;
+}
+
+.conf-img {
+    margin-left: 100px;
+
+}
+
+.bot-center {
+    margin-left: 250px;
+}
+
+.botao-projeto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 8px;
+    display: inline;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.botao-projeto:hover {
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+
+.div-op3 {
+    width: 160px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    min-width: 600px;
+    border-radius: 20px;
+    align-content: center;
+}
+
+.div-op4 {
+    width: 90px;
+    display: inline-block;
+    background-color: rgb(248, 248, 248);
+    min-width: 370px;
+    border-radius: 20px;
+    align-content: center;
+    margin-left: 32%;
+    padding: 18px;
+    margin-top: 7%;
+}
+
+.img-projeto {
+    display: inline;
+}
+
+.img-projeto:hover {
+    opacity: 0.5;
+}
+
+.labels {
+    padding: 8px;
+    line-height: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color:black;
+}
+
+.botao-contato {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-left: 40%;
+    border: 1px solid black;
+    padding: 8px;
+    display: inline;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+}
+
+.botao-contato:hover {
+    background-color: blue;
+    color: white;
+    border: none;
+}
