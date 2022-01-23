@@ -1,7 +1,7 @@
 export type Product = {
     id: string,
     name: string,
-    tag: []
+    tag: string,
 }
 
 export type ProductIdentifier = {
@@ -19,7 +19,8 @@ export class Products {
     constructor(
         private id: string,
         private name: string,
-        private tag: string
+        // private tag_id: string,
+        private tags: string
     ){}
 
     getId(){
@@ -30,12 +31,16 @@ export class Products {
         return this.name
     }
 
-    getTag(){
-        return this.tag
+    // getTagId(){
+    //     return this.tag_id
+    // }
+
+    getTags(){
+        return this.tags
     }
 
 
-    static toProductModel(data: any | string){
+    static toProductModel(data: any){
         return (data.id, data.name, data.tag)
     }
 }

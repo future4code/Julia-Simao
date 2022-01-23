@@ -1,6 +1,10 @@
 import { app } from "./controller/app";
-import { CreateProduct } from "./controller/endpoints/CreateProduct";
+import { ProductController } from "./controller/ProductController";
 
-const createProduct = new CreateProduct()
+const createProduct = new ProductController().createProduct
+const getProducts = new ProductController().getAllProducts
+const getProductBy = new ProductController().getProductById
 
-app.put('/', createProduct.createProduct)
+app.get('/products', getProducts)
+app.get('/product/:id', getProductBy)
+app.put('/', createProduct)

@@ -1,10 +1,13 @@
-GET http://localhost:3003/
+GET http://localhost:3003/products
+
+###
+GET http://localhost:3003/product/245cdc6c-d3a7-4a10-ac55-8f517e50524b
 
 ###
 PUT http://localhost:3003/
 Content-Type: application/json
 
 {
-    "name": "Vestido Azul Turquesa",
-    "tags": "Noite, Festa"
+    "name": "VESTIDO TRICOT CHEVRON",
+    "tags": "Noite, Festa, Elegante"
 }
