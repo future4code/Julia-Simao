@@ -1,0 +1,34 @@
+Loja de roupas online
+
+FUNCIONALIDADES:
+
+    Signup
+        id
+        nome,
+        email,
+        senha
+        role
+
+    Login
+        email,
+        senha
+        role
+
+    Criar produto
+        id produto
+        nome produto
+        preço produto
+        tags
+
+    Editar produto
+        nome
+        preco
+        tags
+
+    Deletar produto
+        id
+
+    ///// SE DER:
+            carrinho
+            finalizar compra
+
