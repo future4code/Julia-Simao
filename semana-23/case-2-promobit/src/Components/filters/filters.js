@@ -1,23 +1,29 @@
-import React, { useContext, useState } from "react"
+import React, { useContext } from "react"
 import GlobalStateContext from "../../GlobalState/GlobalStateContext"
 import { FiltersContainer, FiltersBox } from "./styled"
 
 export const FiltersOptions = () => {
 
-    const { genres } = useContext(GlobalStateContext)
+    const { movie, genres, choiceGenres, setChoiceGenres } = useContext(GlobalStateContext)
 
     const genre = genres[0].genres
 
+    const setChoicesGenres = (id) => {
+        const newGenres = {...choiceGenres}
+        if(newGenres[id]){
+            delete newGenres[id]
+        } else {
+            newGenres[id] = true
+        }
+        setChoiceGenres({...newGenres})
+    }
 
-    // const handleGenre = (value) => {
-    //     setGenreSearch(value);
-    // }
-    
     const filtersComponents = 
         genre && genre.map((gen) => {
             return (
                 <FiltersBox 
-                    // onClick={() => handleGenre(genre.id)}
+                    onClick={() => setChoicesGenres(gen.id)}
+                    choice={choiceGenres[gen.id]}
                     key={gen.id} >
                         {gen.name}
                 </FiltersBox>

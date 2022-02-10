@@ -13,7 +13,7 @@ export const FiltersContainer = styled.div`
 `
 
 export const FiltersBox = styled.p`
-    background-color: white;
+    background-color: ${(props)=> props.choice ? "orange" : "white"};
     color: #323232;
     border-radius: 0.2rem;
     padding: 0.6rem 0.7rem 0.6rem 0.7rem;
@@ -22,9 +22,4 @@ export const FiltersBox = styled.p`
     margin: 0.2rem;
     cursor: pointer;
     text-align: center;
-
-
-    :hover{
-        background-color: rgb(230, 230, 230)
-    }
 `

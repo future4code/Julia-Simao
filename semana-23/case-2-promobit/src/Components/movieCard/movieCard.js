@@ -6,21 +6,31 @@ import { MovieInfo, MovieContainer, MovieTitle, MovieDate, MoviePoster} from "./
 
 export const MovieCard = () => {
 
-    const { movie } = useContext(GlobalStateContext)
+    const { movie, choiceGenres } = useContext(GlobalStateContext)
 
     const movies = movie[0].results
+
+    const filteredMovies = movies && Object.keys(choiceGenres).length ? movies.filter((mov) => {
+        const genresId = mov.genre_ids
+        for (const id of genresId) {
+            if(choiceGenres[id]){
+                return true
+            }
+        }
+        return false
+    }) : movies
 
     const navigate = useNavigate()
 
     return(
         <MovieContainer>
-            {movies && movies.map((movie) => {
+            {filteredMovies && filteredMovies.map((movie) => {
                 return (
                     <MovieInfo key={movie.id}>
                         <MoviePoster src={`${IMG_URL}w154${movie.poster_path}`}  alt={`${movie.title}`}
                         onClick={() => navigate(`/movie/${movie.id}`)}/>
                         <MovieTitle>{movie.title}</MovieTitle>
-                        <MovieDate>{movie.release_date}</MovieDate>
+                        <MovieDate>{movie.release_date.split('-').reverse().join('/')}</MovieDate>
                     </MovieInfo>
                 )
             })}
